@@ -14,13 +14,13 @@ app.use(router)
 
 const server = http.createServer(app)
 
-const io = new Server(server, {
-    cors: {
-        // origin: ['http://localhost:3000', "https://admin.socket.io"],
-        origin: ['*'],
-        credentials: true
-    }
-}) 
+// const io = new Server(server, {
+//     cors: {
+//         // origin: ['http://localhost:3000', "https://admin.socket.io"],
+//         origin: ['*'],
+//         credentials: true
+//     }x
+// }) 
 
 server.listen(process.env.PORT || 3001,  () => {
     console.log('Server is running');
