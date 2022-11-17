@@ -25,3 +25,5 @@ const server = http.createServer(app)
 server.listen(process.env.PORT || 3001,  () => {
     console.log('Server is running');
 })
+
+module.exports = server;
